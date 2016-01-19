@@ -1,6 +1,5 @@
 \section{Dynamisch modelleren: toestands- en activiteiten diagrammen}
 
-
 Naast de tot hiertoe beschreven diagrammen die een puur statisch beeld geven van het systeem en aantonen hoe een aantal dingen in verband staan tot elkaar, zijn er ook diagrammen nodig om het dynamische gedrag voor te stellen en aantonen hoe de dingen samenwerken. Dit dynamische gedrag treedt op een specifiek moment in de levensloop van een systeem op, verandert in de tijd en bevat complexe interacties tussen objecten door het versturen van berichten. Dit betekent concreet dat operaties aangeroepen worden. In UML wordt dit met een aantal diagrammen beschreven:
 
 \begin{itemize}
@@ -31,6 +30,7 @@ elk object bevindt zich in een bepaalde toestand die bepaald wordt door eerder u
 \begin{center}
 \includegraphics[width=4in]{img/state2}%
 \end{center}
+\newpage
 
 Een toestand kan 3 compartimenten hebben:
 
@@ -47,7 +47,9 @@ Activiteiten bestaan uit \textbf{gebeurtenissen} en \textbf{acties}.
 Drie veelgebruikte zijn: 
 
 - entry (wat gebeurt als het object in deze toestand terecht komt), 
+
 - exit (wat gebeurt er als het object de toestand verlaat) 
+
 - do (wat gebeurt er zolang het object in deze toestand is).
 
 Het is belangrijk om het onderscheid te maken tussen events (gebeurtenissen) en toestanden. 
@@ -65,6 +67,7 @@ Een object kan door bepaalde events (gebeurtenissen) veranderen van toestand. Da
 \begin{center}
 \includegraphics[width=4in]{img/state1}%
 \end{center}
+\newpage
 
 \subsubsection{Begin- en eindtoestand}
 
@@ -101,7 +104,7 @@ Het stelt dus een neveneffect voor bij de transitie.
 Een actie is altijd een \textbf{atomaire operatie} en kan dus niet onderbroken worden.
 
 Voorbeeld. Als in het alarm het signaal van een inbreker opgevangen wordt, moet de geluidsinstallatie opgezet worden. Dit is dan een actie die ondernomen wordt bij de transitieverandering.
-
+\newpage
 \subsubsection{Zelftransitie}
 
 Een zelftransitie doet zich voor als een object door een bepaalde transitie in dezelfde toestand terecht komt als deze waarin hij zich bevond voor de transitie zich voordeed.
@@ -135,7 +138,7 @@ Deze kan gepaard gaan met een event, maar kan ook alleen staan. Op het moment da
 \begin{center}
 \includegraphics[width=4in]{img/state6}%
 \end{center}
-
+\newpage
 \subsubsection{Subtoestand}
 
 Subtoestanden laten toe dat er een zeker niveau is van nesting. 
@@ -244,7 +247,7 @@ Ook in een activiteitendiagram heeft men juist 1 begintoestand en één of meerd
 \begin{center}
 \includegraphics[width=4in]{img/activity2}%
 \end{center}
-
+\newpage
 \subsubsection{Beslissingen}
 
 Een reeks activiteiten komt bijna altijd op een punt waar een beslissing moet plaats vinden. Het ene stel voorwaarden leidt naar het ene pad, het andere stel voorwaarden naar het andere. Beide paden sluiten elkaar uit.
@@ -262,7 +265,7 @@ Bij het modelleren van activiteiten is er de mogelijkheid om een transitie op te
 %afbeelding nog plaatsen
 
 \begin{center}
-\includegraphics[width=4in]{img/parallelism}%
+\includegraphics[width=3.8in]{img/parallelism}%
 \end{center}
 
 Voor het weergeven van de splitsing wordt een ononderbroken lijn loodrecht op de transitie gebruikt en worden paden getekend die uit de lijn komen. Het samenkomen van de paden wordt weergegeven door de paden naar een tweede ononderbroken lijn te laten wijzen.
@@ -277,8 +280,8 @@ Het symbool voor het verzenden van een signaal is een vijfhoek waarvan één van
 \begin{center}
 \includegraphics[width=4in]{img/signals}%
 \end{center}
-
-\subsubsubsection{Zwemlanen (swimlanes)}
+\newpage
+\subsubsection{Zwemlanen (swimlanes)}
 
 Met behulp van zwemlanen kan in een activiteitendiagram aangeduid worden wie de verantwoordelijkheid heeft over de activiteiten in een activiteitendiagram. 
 
@@ -291,7 +294,7 @@ Op deze manier kunnen rollen gevisualiseerd worden.
 \begin{center}
 \includegraphics[width=4in]{img/swimlanes}%
 \end{center}
-
+\newpage
 \subsubsection{Hybride diagrammen}
 
 In een hybride diagram kunnen symbolen uit verschillende soorten diagrammen gebruikt worden. Deze verschillende soorten symbolen kunnen met elkaar verenigd worden in één diagram.
@@ -302,5 +305,3 @@ In een hybride diagram kunnen symbolen uit verschillende soorten diagrammen gebr
 \begin{center}
 \includegraphics[width=4in]{img/hybride}%
 \end{center}
-
-

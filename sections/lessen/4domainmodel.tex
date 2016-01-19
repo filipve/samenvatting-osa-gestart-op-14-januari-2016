@@ -15,7 +15,7 @@ Zoals eerder vermeld worden hiervoor bijna identieke symbolen gebruikt als bij h
 
 Aangezien het klassendiagram de representatie is van de dingen waarvan de systeem- ontwikkelaar vertrekt, zal een klassendiagram steeds opgesteld worden, het objectdiagram daarentegen wordt enkel uitgewerkt als men een situatie wil illustreren/ verduidelijken met een concreet voorbeeld.
 Het klassendiagram vormt de rode draad doorheen de softwareontwikkeling: telkens als bepaalde diagrammen verder uitgewerkt worden, wordt teruggekoppeld naar het klassendiagram. Natuurlijk zijn het ook de klassen van het laatste versie klassendiagram waarvoor uiteindelijk de klassendefinities geschreven zullen worden.
-
+\newpage
 \subsection{Klassendiagram / objectdiagram: onderdelen}
 
 Een klassendiagram bestaat in eerste instantie uit klassen: een klasse beschrijft een verzameling objecten in een systeem die een gelijkwaardige rol of rollen hebben, of m.a.w. een klasse is een sjabloon voor het maken van objecten.
@@ -64,7 +64,7 @@ De conventies die gelden voor een object zijn analoog aan deze van de klasse : o
 
 De naam van het object verschijnt bovenaan maar men geeft bijkomend aan van welke klasse dit een object is. De objectnaam wordt in kleine letters genoteerd (ook de eerste letter) en na het dubbele punt verschijnt de klassennaam die onderlijnd is.
 Aangezien het object een concreet voorkomen is van de klasse, geeft men voor elk attribuut de concrete waarde.
-
+\newpage
 \subsection{klassendiagram en objectdiagram: concepten}
 
 De volgende concepten zijn van belang bij het opmaken van klasse- en objectdiagrammen:
@@ -102,7 +102,7 @@ Zoals een object een instantie (concreet voorkomen) is van een klasse, zo heeft 
 
 Als een bepaald persoon, bv. Karei werkt in een bepaald bedrijf, bv. CE en we stellen deze relatie voor, dan spreekt men van een link. Een link wordt dus eveneens voorgesteld door een lijn, maar een link verbindt twee objecten in een objectdiagram.
 Naar analogie met de objectnaam wordt ook de naam van de link onderlijnd.
-
+\newpage
 \subsubsection{rol}
 
 Als een klasse met een andere klasse geassocieerd wordt, speelt elk van die klassen meestal een rol in die associatie (afhankelijk van de context). Je kan deze rollen in het diagram opnemen door de naam van de rol bij de lijn te schrijven naast de klasse die de betreffende rol speelt.
@@ -127,7 +127,7 @@ Een associatieklasse kan op zich associaties hebben naar andere klassen.
 \begin{center}
 \includegraphics[width=4in]{img/asscl1}%
 \end{center}
-
+\newpage
 \subsubsection{multipliciteit}
 
 De multipliciteit van de associatie geeft aan met hoeveel instanties van de geassocieerde klasse een instantie van een klasse geassocieerd kan zijn. Deze multipliciteit geldt gedurende de ganse levenscyclus van het systeem.
@@ -235,7 +235,7 @@ Voorbeeld, een superklasse "Rekening" die gespecialiseerd wordt in twee subklass
 De attributen en operaties die door de subklassen geërfd worden moeten in de subklassen niet meer vermeld worden aangezien deze al verschijnen in de superklasse. De extra attributen en/of operaties van de subklassen worden natuurlijk wel nog vermeld in de subklassen.
 
 Let op voor het principe van typering: eens een object gecreëerd is, kan het niet meer van type veranderen. Denk hierbij aan het eerder aangehaalde voorbeeld van de verschillende ruimtes in een hotel: een kamer kan op een ander moment ook gebruikt worden als vergaderruimte, enz.
-
+\newpage
 \subsubsection{meervoudige overerving}
 
 Indien een klasse meer dan één ouder heeft, spreekt men over een meervoudige overerving. In het geval een klasse slechts één ouder heeft, handelt het over een enkelvoudige overerving.
@@ -254,7 +254,7 @@ Voorbeeld, in bovenstaande meervoudige overerving kan men de superklassen Fax en
 \begin{center}
 \includegraphics[width=4in]{img/con2}%
 \end{center}
-
+\newpage
 \subsubsection{abstracte klasse}
 
 Een klasse waarin bepaalde onderdelen nog niet gedefinieerd zijn, wordt een abstracte klasse genoemd. Uit een abstracte klasse kunnen dus nooit objecten geïnstantieerd worden!
@@ -300,7 +300,7 @@ Een klasse is gerelateerd aan een interface via realisatie, om dit aan te duiden
 \includegraphics[width=4in]{img/int2}%
 \end{center}
 
-
+\newpage
 \subsubsection{aggregatie en compositie : (mogelijke examenvraag)}
 
 Aggregatie en compositie zijn soorten associaties, maar in plaats van enkel te tonen dat twee klassen geassocieerd zijn, wordt door een aggregatie en door een compositie aangegeven dat het handelt over een speciaal soort associatie, nl. de associatie "is onderdeel van".
@@ -335,7 +335,6 @@ In een klassenpictogram kan men heel wat informatie over de klassen specificeren
 \end{center}
 
 Men noteert een constraint door de tekst die de beperking aangeeft, op te nemen tussen accolades of door deze toe te voegen in een notebox (notitie). UML kent een andere, veel formelere, manier om beperkingen toe te voegen die de definities explicieter maken, nl. OCL, de Object Constraint Language.
-Het bestuderen van OCL zou ons te ver leiden en maakt dan ook geen deel uit van deze cursus.
 
 \subsection{klassendiagram en objectdiagram: werkwijze}
 
@@ -362,7 +361,9 @@ Het klassendiagram wordt als volgt opgesteld (volgens de regels van OMT):
     Vervolgens ga je voor alle klassen na welke operaties toegevoegd moeten worden.
     \item Generaliseer met behulp van overerving
     
-    Op dit moment ga je op zoek naar overeenkomsten tussen de verschillende klassen om eventuele superklassen en subklassen te identificeren. De gemeenschappelijke attributen en operaties worden in de superklasse genoteerd, de specifieke blijven in de subklassen.
+    Op dit moment ga je op zoek naar overeenkomsten tussen de verschillende klassen om eventuele superklassen en subklassen te identificeren.
+    
+    De gemeenschappelijke attributen en operaties worden in de superklasse genoteerd, de specifieke blijven in de subklassen.
 
 \item Maak OCL-constraints
 
