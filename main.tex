@@ -23,7 +23,7 @@
 %\usepackage{sty/}
 %\usepackage{sty/}
 %\usepackage{sty/}
-
+\newcommand{\bfsp}{\renewcommand\labelitemi{$\bullet$}}
 
 \usepackage{makeidx}
 
@@ -48,7 +48,11 @@
 \DeclareTranslation{Dutch}{exsheets-solution-name}{Oplossing}
 
 \usepackage{caption}
-
+\usepackage{wrapfig}
+\titlespacing{\section}{0pt}{2ex}{1ex}
+\titlespacing{\subsection}{0pt}{1ex}{0ex}
+\titlespacing{\subsubsection}{0pt}{0.5ex}{0ex}
+\usepackage{subcaption}
 \begin{document}
 
 
@@ -97,11 +101,7 @@
 
 %Next we are adding the additional lists to the end of the document:
 
-\listofalgorithms
-\clearpage
-\listoffigures
-\clearpage
-\listoftables
+
 \clearpage
 
 %\printglossaries

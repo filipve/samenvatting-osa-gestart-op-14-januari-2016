@@ -4,42 +4,42 @@
 
 \subsubsection{beschrijving van een bedrijf/organisatie (nmbs)}
 
+\begin{multicols}{2}
 \be
 \itf Maak een klassendiagram
 \itf Maak een toestandsdiagram
 \itf Maak een use-case beschrijving
 \itf Maak een sequentiediagram
 \ee
+\end{multicols}
 
 \subsubsection{Gegeven: een case study van een taxibedrijf.}
-
+\begin{multicols}{2}
 \be
 \itf het klassendiagram
 \itf het toestandsdiagram voor Klant
 \itf de use case beschrijving voor 'plaats reservatie'
 \itf het sequentiediagram voor 'plaats reservatie'
 \ee 
-
+\end{multicols}
 \subsubsection{Je moet een systeem voor de Olympische Spelen maken}
-
+\begin{multicols}{2}
 \be
 \itf Maak een klassediagramma
 \itf Maak een toestandsdiagram voor 'Deelname'
 \itf Maak een use-case beschrijving voor 'Voer prestaties in na wedstrijd'
 \itf Maak een sequentiediagram voor 'Voer prestaties in na wedstrijd'
-\itf 
 \ee
-
+\end{multicols}
 \subsubsection{Je krijgt een hele beschrijving van een racecircuit.}
-
+\begin{multicols}{2}
 \be
 \itf Maak een klassediagramma in de domein(dinges)fase
 \itf Maak een Use Case beschrijving voor INSCHRIJVEN VOOR RACE
 \itf Maak een toestandsdiagramma voor INSCHRIJVEN
 \itf Maak een sequentiediagramma voor INSCHRIJVEN
-\itf 
 \ee
-
+\end{multicols}
 \subsection{Schriftelijk}
 
 %Question environment: \begin{question}[<options>]{<points>}
@@ -48,6 +48,8 @@ Welk zijn de implementatiediagrammen, waarvoor worden ze gebruikt, wat is hun nu
 \end{question}
 
 \begin{solution}[print]
+
+
 
 \end{solution}
 %Question environment: \begin{question}[<options>]{<points>}
@@ -65,12 +67,22 @@ Geef de implementatiediagrammen, wanneer stel je deze op, wat geven deze weer, w
 \end{question}
 
 \begin{solution}[print]
+Antwoord van iemand op facebook:
+
+\begin{itemize}
+\bfsp
+    \item Componentdiagram: toont de afhankelijkheden tussen de onderdelen van de code.
+    \item Deployment diagram: toont de structuur van het runtime systeem, welke onderdelen draaien waar en hoe moet de hardware geconfigureerd worden.
+    \item Doel = vereenvoudiging onderhoud en optimalisatie herbruikbaarheid
+    \item Componentendiagram toont welke componenten er zijn en hoe ze samen werken. Het deployement diagram toont waar op de hardware die componenten draaien.
+\end{itemize}
+
 
 \end{solution}
 
 %Question environment: \begin{question}[<options>]{<points>}
 \begin{question}
-Wat is aan activiteitendiagram, waarvoor dient het, waarvoor wordt het gebruikt, geef een voorbeeld
+Wat is een activiteitendiagram, waarvoor dient het, waarvoor wordt het gebruikt, geef een voorbeeld
 \end{question}
 
 \begin{solution}[print]
@@ -83,7 +95,7 @@ Wat is een activiteits diagram, geef een voorbeeld aan de hand van de probleemst
 \end{question}
 
 \begin{solution}[print]
-
+Een activiteitendiagram is een variant op het toestandsdiagram maar toont de stroom van activiteiten. Het gaat van de ene actie naar de actie en gaat pas verder als die voltooid is. Het heeft een begin en einde. Dit is wat je doet bij Business Proces Modeling.
 \end{solution}
 
 %Question environment: \begin{question}[<options>]{<points>}
@@ -92,6 +104,15 @@ Wat is het verschil tussen statische en dynamische diagrammen? Geef voor elk gez
 \end{question}
 
 \begin{solution}[print]
+Statisch laat zien hoe dingen in verband staan tegenover elkaar. Dat geeft een beeld dat "stilstaat" van het systeem.
+
+Dynamisch is hoe die dingen met elkaar samenwerken, stellen dynamisch gedrag voor, dus iets dat verandert.
+
+\begin{itemize}
+\bfsp
+    \item Statische: klasse \& objectdiagram
+    \item Dynamische: sequentie, collaboratie, toestand \& activiteitendiagram
+\end{itemize}
 
 \end{solution}
 
@@ -111,6 +132,15 @@ Wat betekent aggregatie? Wat betekent compositie? Wat zijn de verschillen en gel
 
 \begin{solution}[print]
 
+Aggregatie en compositie zijn soorten associaties. Het toont niet enkel dat 2 klassen geassocieerd zijn maar ook dat de child onderdeel is van de parent.
+
+Compositie: Het geheel is uitdrukkelijke eigenaar van de onderdelen. Als het geheel of eigenaar weg valt dan vallen de componenten ook weg. De componenten horen bij precies 1 geheel.
+
+Aggregatie: Het verband tussen de onderdelen en geheel is veel losser. Het onderdeel hoort wel bij het geheel maar deze kan veranderd worden zonder dat het geheel weg valt.
+
+Bijvoorbeeld: gewone fiets vs wielerterrorist fiets. Als bij uw gewone stadsvelo de velg kapot is dan is uw fiets kapot terwijl een wielerterrorist zijn velg gewoon swapped en verder kan rijden. Of ze hebben verschillende banden voor verschillende weeromstandigheden.
+
+
 \end{solution}
 
 %Question environment: \begin{question}[<options>]{<points>}
@@ -120,15 +150,21 @@ Wat betekent aggregatie? Wat betekent compositie? Wat zijn de verschillen en gel
 
 \begin{solution}[print]
 
+Een use-case stelt een functionaliteit van het systeem voor vanuit het standpunt van de actor. Het diagram toont dan alle functionaliteiten samen met de actoren. Elke use-case kan ook worden beschreven worden in de vorm van: naam, samenvatting, actoren, aannamen, beschrijving, uitzonderingen, resultaat.
+
+Het wordt opgesteld om de functionaliteiten van het systeem overzichtelijk weer te geven. Het geeft de requirements weer, wat moet ons systeem kunnen?
+
+Het heeft invloed op de sequentie \& collaboratie diagrammen aangezien deze op een use-case zijn gebaseerd. Dus als de use-case verandert dan gaat het sequentie/collaboratie diagram misschien niet meer kloppen.
+
 \end{solution}
 
 %Question environment: \begin{question}[<options>]{<points>}
 \begin{question}
-
+Wat is in UML de guard en in welke diagrammen kan je het tegenkomen?
 \end{question}
 
 \begin{solution}[print]
-
+Guard is een voorwaarde die moet worden volbracht voordat hetgene waar de guard op staat verder kan gaan. Je komt het tegen op alle dynamische diagrammen.
 \end{solution}
 
 %Question environment: \begin{question}[<options>]{<points>}
@@ -138,6 +174,17 @@ Wat is een actor? In welke UML's komt deze voor? Hoe wordt deze weergegeven
 
 \begin{solution}[print]
 
+Een actor is iets of iemand die interactie heeft met het systeem.
+De actor komt voor in de:
+\begin{itemize}
+\renewcommand\labelitemi{$\bullet$}
+    \item use case diagram
+    \item collaboratie \& sequentiediagram (vertrekt vanuit use case)
+    \item activiteitendiagram (bij de lanes).
+\end{itemize}
+
+Een actor wordt voorgesteld door een mannetje of een lane. Hij kan use-cases uitvoeren.
+
 \end{solution}
 
 %Question environment: \begin{question}[<options>]{<points>}
@@ -146,6 +193,10 @@ Wat is meervoudige overerving en herhaaldelijke overerving? Geef een goed voorbe
 \end{question}
 
 \begin{solution}[print]
+Antwoord van iemand op facebook:
+
+Meervoudige overerving = overerven van 2 of meerdere klassen. In java gaat die bijvoorbeeld niet om problemen te voorkomen. Herhaaldelijke overerving is bijvoorbeeld als je 2 childklassen maakt van 1 parent en dan nog een nieuwe klasse van die 2 childs laat overerven zodat je een ruit krijgt infeite. Probleem hierbij is dat de child niet kan weten welke methode hij moet gebruiken (de methode kan verschillen bij de parents).
+
 
 \end{solution}
 
@@ -177,6 +228,241 @@ UML is een iteratieve methode, bij welke diagrammen gebeurt dit.
 
 \begin{solution}[print]
 
+\end{solution}
+
+
+
+\begin{question}
+Difference between business analysis and requirements analysis:
+\end{question}
+
+\begin{solution}[print]
+Business analysis is made by a person who does have nothing in common with the project itself.
+
+When we talk about the system itself, we talk about the requirements analysis.
+\end{solution}
+
+
+
+\begin{question}
+By defining and describing the business events. I get to understand the objects in the system I’ll develop
+\end{question}
+
+\begin{solution}[print]
+Business events are going about things that happen in the real world. Vb. customer wants to buy a sweater.
+
+Business events are outside the system.
+
+Business objects are inside the system/scope.
+\end{solution}
+
+
+
+\begin{question}
+Why is the use-case diagram so important throughout the whole system development?
+\end{question}
+
+\begin{solution}[print]
+The use-case diagram contains the requirements and actions of an user/actor.
+
+Everything you develop is connected to what you define in your use-case diagram.
+\end{solution}
+
+
+
+\begin{question}
+In a use-case diagram, a use-case represents …
+\end{question}
+
+\begin{solution}[print]
+A system requirement
+\end{solution}
+
+
+
+\begin{question}
+In the domain modelling phase, the class diagram represents …
+\end{question}
+
+\begin{solution}[print]
+The structure of my business.
+
+\textbf{False answer:}
+\begin{itemize}
+    \item the patterns to be used during development
+    \item the relationships between my actors
+    \item another view on my business events
+\end{itemize}
+
+\end{solution}
+
+
+
+\begin{question}
+an association class in my class diagram represents (zekere examenvraag)
+\end{question}
+
+\begin{solution}[print]
+$\Rightarrow$ we gaan het moeten uitleggen of zelf een association class tekenen en uitleggen
+
+a relationship with characteristics
+\end{solution}
+
+
+
+\begin{question}
+generalisation is only defined in the business model (zekere examenvraag)
+\end{question}
+
+\begin{solution}[print]
+false
+\end{solution}
+
+
+
+\begin{question}
+a state chart diagram and an activity diagram are actually representing the same thing
+\end{question}
+
+\begin{solution}[print]
+false
+
+State chart diagram: One object and different states
+
+Vb. an order object. The customer pushes submit and the order is finalized.
+
+Activity diagram: vb. there is a claim from a customer.
+
+Now you have a workflow where there happens actions between different roles and actors and objects.
+\end{solution}
+
+
+
+\begin{question}
+an activity diagram can also be used to describe a use-case
+\end{question}
+
+\begin{solution}[print]
+true
+\end{solution}
+
+
+
+\begin{question}
+what is an activity diagram?
+\end{question}
+
+\begin{solution}[print]
+
+\end{solution}
+
+
+
+\begin{question}
+What kind of diagram should i create to model that an order should be payed before I deliver to the customer?
+\end{question}
+
+\begin{solution}[print]
+
+\begin{itemize}
+    \item Sequence diagram
+    \item State chart diagram
+    \item Activity diagram
+    \item Collaboration diagram
+    \item Most correct: state chart diagram
+\end{itemize}
+
+
+\end{solution}
+
+
+
+\begin{question}
+When i create a sequence diagram, it actually represents the same as a collaboration diagram.
+\end{question}
+
+\begin{solution}[print]
+In the sequence diagram, you focus on time between everything.
+
+In collaboration diagram you focus on collaboration not on time. That’s the difference.
+\end{solution}
+
+
+
+\begin{question}
+Which diagram should I create to represent the use-case descriptions as a white box and not the black box as described in the use-case description…
+\end{question}
+
+\begin{solution}[print]
+Answer: the sequence diagram
+
+Black box betekent dat je niet ziet wat er binnen in gebeurt, enkel de input die je zelf geeft en de output die je dan krijgt.
+
+White box betekent dat je wel weet wat er vanbinnen gebeurt.
+
+Usecase is een blackbox en dan bv bij de sequentiediagram beschrijf je hoe de dingen in de usecase intern werken.
+\end{solution}
+
+
+
+\begin{question}
+In a sequence diagram I start modelling the multiple layer model
+\end{question}
+
+\begin{solution}[print]
+Answer: true
+\end{solution}
+
+
+
+\begin{question}
+The multiple layer model is preparing for using which pattern?
+\end{question}
+
+\begin{solution}[print]
+MVC PATTERN = Model View Controller
+\end{solution}
+
+
+
+\begin{question}
+The sequence diagram represents the same model as the collaboration diagram, but without the concept of time.
+\end{question}
+
+\begin{solution}[print]
+Answer: false
+
+Sequence diagram is with concept of time
+\end{solution}
+
+
+
+\begin{question}
+In what diagrams can an actor be represented?
+\end{question}
+
+\begin{solution}[print]
+\begin{itemize}
+    \item Use case diagram
+    \item Sequence diagram
+    \item Collaboration diagram
+\end{itemize}
+\end{solution}
+
+
+
+\begin{question}
+In what diagrams can a guard be used?
+\end{question}
+
+\begin{solution}[print]
+Guard is the thing between square brackets [] => condition
+\begin{itemize}
+    \item Sequence diagram
+    \item State chart diagram
+    \item Activity diagram
+    \item Collaboration diagram
+\end{itemize}
 \end{solution}
 
 \subsubsection{Terminologie}

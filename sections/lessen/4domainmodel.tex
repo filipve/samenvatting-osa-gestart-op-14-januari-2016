@@ -1,3 +1,4 @@
+\newpage
 \section{Het domeinmodel : klassendiagram en objectdiagram}
 
 Zoals eerder al vermeld (hoofdstuk 1 - de objectgerichte visie) vormt het domeinmodel (synoniemen: business model, bedrijfsmodel) de ziel van de systeemontwikkeling. Hiervoor wordt typisch een klassendiagram opgesteld. Het is dan ook logisch diagram als eerste besproken wordt. Bovendien is het zo dat het klassendiagram de rode draad vormt in de systeemontwikkeling en in elke fase terug komt (deze terugkoppeling wordt bij de beschrijving van de andere modellen besproken).
@@ -192,7 +193,7 @@ Soms is een klasse met zichzelf geassocieerd. Dit gebeurt indien een klasse obje
 \end{center}
 
 Een reflexieve associatie wordt volledig analoog met andere associaties getekend, nl. een lijn tussen de twee klassen, in dit geval dus een lijn die vertrekt en toekomt in dezelfde klasse. Ook hier kan men de rollen aanduiden die de klasse heeft in de associatie.
-
+\newpage
 \subsubsection{toegankelijkheid}
 
 De toegankelijkheid is van toepassing op attributen en operaties en geeft aan in welke mate andere klassen attributen en operaties van een bepaalde klasse kunnen gebruiken.
@@ -235,7 +236,6 @@ Voorbeeld, een superklasse "Rekening" die gespecialiseerd wordt in twee subklass
 De attributen en operaties die door de subklassen geërfd worden moeten in de subklassen niet meer vermeld worden aangezien deze al verschijnen in de superklasse. De extra attributen en/of operaties van de subklassen worden natuurlijk wel nog vermeld in de subklassen.
 
 Let op voor het principe van typering: eens een object gecreëerd is, kan het niet meer van type veranderen. Denk hierbij aan het eerder aangehaalde voorbeeld van de verschillende ruimtes in een hotel: een kamer kan op een ander moment ook gebruikt worden als vergaderruimte, enz.
-\newpage
 \subsubsection{meervoudige overerving}
 
 Indien een klasse meer dan één ouder heeft, spreekt men over een meervoudige overerving. In het geval een klasse slechts één ouder heeft, handelt het over een enkelvoudige overerving.
@@ -265,23 +265,32 @@ Zo ook is een abstracte operatie een operatie die niet geïnstantieerd wordt, di
 %afbeelding nog plaatsen
 
 \begin{center}
-\includegraphics[width=4in]{img/abs1}%
+\includegraphics[width=3in]{img/abs1}%
 \end{center}
 
 Om een abstracte klasse aan te duiden, gebruikt men het pictogram van een klasse maar de naam van de klasse wordt in cursief gezet. Ook een abstracte operatie wordt analoog, in cursief dus, aangeduid.
-
+\newpage
 \subsubsection{interface}
 
 Indien je een aantal operaties voor een klasse ontwikkelt die je wil hergebruiken in andere klassen, kan je gebruik maken van een interface. Via deze interface kan beschreven worden hoe instanties van een klasse benaderd kunnen worden door andere objecten.
 
+\begin{wrapfigure}[18]{R}{0.5\textwidth}
+  \begin{center}
+    \includegraphics[width=0.48\textwidth]{img/int1}
+  \end{center}
+  \begin{center}
+    \includegraphics[width=0.48\textwidth]{img/int2}
+  \end{center}
+\end{wrapfigure}
 Een interface is nl. een verzameling operaties die één of ander aspect van het gedrag van een klasse specificeert waarbij deze verzameling operaties aan andere klassen gepresenteerd worden.
 Of m.a.w. een interface is een verzameling operaties die door een klasse worden uitgevoerd.
 
 %afbeelding nog plaatsen
-
+\begin{comment}
 \begin{center}
 \includegraphics[width=4in]{img/int1}%
 \end{center}
+\end{comment}
 
 Een interface wordt op dezelfde manier genoteerd als een klasse, nl. door een rechthoek. Aangezien een interface echter geen attributen heeft, zullen deze niet verschijnen in een interface.
 Bijkomend wil men natuurlijk wel het verschil maken tussen een klasse en een interface, dit gebeurt door in de interfacenaam het stereotype
@@ -295,12 +304,14 @@ toe te voegen. Soms wordt een interface ook voorgesteld door een bolletje.
 Een klasse is gerelateerd aan een interface via realisatie, om dit aan te duiden wordt een stippellijn getekend met een pijl die naar de interface wijst.
 
 %afbeelding nog plaatsen
-
+\begin{comment}
 \begin{center}
 \includegraphics[width=4in]{img/int2}%
 \end{center}
+\end{comment}
 
 \newpage
+
 \subsubsection{aggregatie en compositie : (mogelijke examenvraag)}
 
 Aggregatie en compositie zijn soorten associaties, maar in plaats van enkel te tonen dat twee klassen geassocieerd zijn, wordt door een aggregatie en door een compositie aangegeven dat het handelt over een speciaal soort associatie, nl. de associatie "is onderdeel van".
